@@ -1,0 +1,139 @@
+body {
+    background-color: #00A77B;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.node-root {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    background-color: #466F85;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.node-demo {
+    position: relative;
+    border: unset;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 45%;
+    bottom: 0;
+}
+
+.demo-line {
+    width: 0px;
+    height: 2px;
+    background-color: red;
+    transform: rotate(-30deg) translateX(-120px) translateY(26px);
+    border: unset;
+    animation: line-grow 3s linear;
+    animation-fill-mode:forwards;
+}
+
+@keyframes line-grow {
+    0%  {width:0px}
+    25% {width:25px}
+    50% {width:50px}
+    75% {width:75px}
+    100% {width:100px}
+}
+
+.node-demo-left{
+    position: absolute;
+    width: 2px;
+    background-color: #00A77B;
+    left: 0;
+    bottom: 0;
+    animation: line-left-grow 3s linear 3s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes line-left-grow {
+    0%  {height:0px}
+    25% {height:15px}
+    50% {height:30px}
+    75% {height:45px}
+    100% {height:60px}
+}
+
+
+.node-demo-bottom{
+    position: absolute;
+    height: 2px;
+    background-color: #00A77B;
+    bottom: 0;
+    left: 0;
+    animation: line-bottom-grow 6s linear infinite 3s alternate;
+    animation-fill-mode:forwards;
+}
+
+@keyframes line-bottom-grow {
+    0%  {width:0px}
+    25% {width:40px}
+    50% {width:80px}
+    75% {width:80px}
+    100% {width:80px}
+}
+
+.node-demo-top{
+    position: absolute;
+    height: 2px;
+    background-color: #00A77B;
+    top:0;
+    left: 0;
+    animation: line-top-grow 3s linear 6s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes line-top-grow {
+    0%  {width:0px}
+    25% {width:20px}
+    50% {width:40px}
+    75% {width:60px}
+    100% {width:80px}
+}
+
+.node-demo-right{
+    position: absolute;
+    width: 2px;
+    background-color: #00A77B;
+    right: 0;
+    bottom: 0;
+    animation: line-right-grow 3s linear 6s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes line-right-grow {
+    0%  {height:0px}
+    25% {height:15px}
+    50% {height:30px}
+    75% {height:45px}
+    100% {height:60px}
+}
+.img-mark{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #466F85;
+    animation: img-mark 3s linear;
+    animation-fill-mode:forwards;
+}
+
+@keyframes img-mark {
+    0%  {width:100%}
+    25% {width:75%}
+    75% {width:25%}
+    50% {width:50%}
+    100% {width:0%}
+}
